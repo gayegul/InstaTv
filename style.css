@@ -11,51 +11,35 @@ body {
   background-color: black;
 }
 video {
-  /*display: block;*/
   margin: auto;
+  height: 100%;
+  width: 100%;
 }
 #video {
-  display: inline-block;
   margin: auto;
   vertical-align: top;
-  float: left;
+  margin: 0 auto;
+  width: 50%;
+  height: 500px;
+  width: 500px;
 }
 #audio {
-  display: block;
   vertical-align: top;
-  margin: auto;
-  float: right;
+  margin: 0 auto;
+  width: 50%;
 }
 #sc-logo {
   width: 32px;
   height: 32px;
-  display: inline;
-  position: relative;
-}
-#sc-widget {
-  margin-left: 545px;
-  padding-left: 5px;
-  width: 50%;
-  height: 10%;
-  display: inline;
-  position: relative;
-}
-#widget > div.cookiePolicy.sc-background-light {
-  text-decoration-color: white;
+  padding-left: 25px;
 }
 #footer {
   color: #A6B0B0;
   font-size: 85%;
-  text-align: center;
-  bottom: 0;
-  vertical-align: top;
-  padding-top: 10px;
   font-family: Arial;
-	/*height: 30px;
-	position: fixed;
-	left: 0;
-  right: 0;
-  background-color: #667979;*/
+  float: right;
+  padding-top: 10px;
+  padding-left: 25px;
 }
 #footer a, #footer a:visited {
   color: #A6B0B0;

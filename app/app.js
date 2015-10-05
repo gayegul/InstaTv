@@ -4,7 +4,7 @@ $(document).ready(function() {
   var SC_clientID1 = "a453e1bd2658";
   var SC_clientID2 = "fff4e0b83f";
   var SC_clientID3 = "f2ab3829bc";
-  var SC_URL = "http://api.soundcloud.com/playlists/104226047?client_id=" + SC_clientID1 + SC_clientID2 + SC_clientID3;
+  var SC_URL = "http://api.soundcloud.com/playlists/151936626?client_id=" + SC_clientID1 + SC_clientID2 + SC_clientID3;
 
   // makes an ajax call and provides an array of song urls
   function getPlayList(url, callback) {
