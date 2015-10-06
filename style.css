@@ -3,12 +3,12 @@ header {
   text-align: center;
   margin-bottom: 20px;
   background-color: white;
-  font-family: Arial;
   letter-spacing: 0.0625em;
   font-weight: bold;
 }
 body {
   background-color: black;
+  font-family: Arial;
 }
 video {
   margin: auto;
@@ -22,6 +22,20 @@ video {
   width: 50%;
   height: 500px;
   width: 500px;
+}
+#username {
+  color: #A6B0B0;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  font-family: arial;
+}
+a:link {
+  text-decoration: none;
+  color: #A6B0B0;
+}
+a:visited {
+  color: #A6B0B0;
 }
 #audio {
   vertical-align: top;
