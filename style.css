@@ -23,12 +23,14 @@ video {
   width: 50%;
   height: 500px;
   width: 500px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 #username {
   color: #A6B0B0;
-  position: absolute;
-  left: 50px;
-  top: 200px;
+  margin: auto;
+  width: 500px;
+  text-align: center;
   font-family: arial;
 }
 a:link, a:visited {
@@ -56,7 +58,7 @@ a:link, a:visited {
 #rectangle {
     width: 150px;
     height: 150px;
-    background-color: white;
+    background-color: #A6B0B0;
     opacity: 0.2;
     position: absolute;
     border-radius: 10px;
@@ -90,13 +92,47 @@ a:link, a:visited {
     background-color: #A6B0B0;
     box-shadow: 1px 1px 5px #888888;
 }
+#nextSongButton {
+  position: absolute;
+  left: 1100px;
+  top: 300px;
+}
+#nextSongRectangle {
+    width: 100px;
+    height: 100px;
+    background-color: #A6B0B0;
+    opacity: 0.2;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px white;
+}
+#nextSongArrow {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left:50px solid #A6B0B0;
+    position: relative;
+    left: 40px;
+    top: 22px;
+}
+#nextSongColumn {
+    width: 20px;
+    height: 60px;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    background-color: #A6B0B0;
+    box-shadow: 1px 1px 5px #888888;
+}
 #sc-logo {
   width: 64px;
   height: 64px;
   padding-left: 25px;
-  position: absolute;
-  left: 200px;
-  top: 150px;
+  display: inline-block;
+  position: relative;
+  top: -400px;
+  left: -360px;
 }
 #footer {
   color: #A6B0B0;

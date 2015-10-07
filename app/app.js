@@ -74,6 +74,8 @@ $(document).ready(function() {
   function playSong() {
     getSongNumber();
     song = arrayOfSongs[songNumber];
+    title = arrayOfSongTitles[songNumber];
+    $('#songTitle').html(title);
     $('#song').attr('controls', false).attr('src', song).attr('preload', 'auto').get(0).play();
   }
 
@@ -133,7 +135,7 @@ $(document).ready(function() {
     video = videos.shift();
     username = usernames.shift();
     $('video').attr('src', video).attr('controls', false).prop('muted', true).get(0).play();
-    $('#username').html('<a href="' + "https://instagram.com/" + username + '" target="_blank">Uploaded by: <br />@' + username + '<a/>');
+    $('#username').html('<a href="' + "https://instagram.com/" + username + '" target="_blank">Uploaded by: @' + username + '<a/>');
   }
 
   // gets more video urls along with uploader's info when video url list is less then 2
