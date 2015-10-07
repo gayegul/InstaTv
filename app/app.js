@@ -39,7 +39,6 @@ $(document).ready(function() {
 
   // gets the playlist as an array of urls invokes playSong()
   getPlayList(SC_URL, function(songList, titleList) {
-    console.log(songList);
     for(var i = 0; i < songList.length; i++) {
       arrayOfSongs.push(songList[i]);
       arrayOfSongTitles.push(titleList[i]);
@@ -135,7 +134,7 @@ $(document).ready(function() {
     video = videos.shift();
     username = usernames.shift();
     $('video').attr('src', video).attr('controls', false).prop('muted', true).get(0).play();
-    $('#username').html('<a href="' + "https://instagram.com/" + username + '" target="_blank">Uploaded by: @' + username + '<a/>');
+    $('#username').html('<a href="' + "https://instagram.com/" + username + '" target="_blank"> @' + username + '<a/>');
   }
 
   // gets more video urls along with uploader's info when video url list is less then 2
