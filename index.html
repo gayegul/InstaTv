@@ -10,13 +10,24 @@
   <div id="video">
       <video src=""></video>
   </div>
-  <div id="audio">
-    <div id="username"></div>
-    <audio id="song" src="" controls></audio>
-    <iframe id="sc-logo" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fuser-149912186&color=black_white&size=32" allowtransparency="true" scrolling="no" frameborder="no"></iframe>
-    <div id="footer">© 2015 Gaye Gul Bulut |
-      <a href="https://github.com/gayegul/jQueryInstaTv" target="_blank">GitHub</a>
+  <div id="username"></div>
+  <div id="playPauseButton">
+    <div id="rectangle"></div>
+    <div class="play">
+      <div id="arrow"></div>
     </div>
+    <div class="pause">
+      <div id="column1"></div>
+      <div id="column2"></div>
+    </div>
+  </div>
+  <div id="audio">
+    <audio id="song" src="" controls></audio>
+    <iframe id="sc-logo" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fuser-149912186&color=black_white&size=64" allowtransparency="true" scrolling="no" frameborder="no"></iframe>
+    <div id="songTitle"></div>
+  </div>
+  <div id="footer">© 2015 Gaye Gul Bulut |
+    <a href="https://github.com/gayegul/jQueryInstaTv" target="_blank">GitHub</a>
   </div>
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>

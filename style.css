@@ -1,10 +1,12 @@
 header {
   font-size: 40px;
-  text-align: center;
   margin-bottom: 20px;
   background-color: white;
   letter-spacing: 0.0625em;
-  font-weight: bold;
+  display: inline;
+  position: absolute;
+  top: 20px;
+  left: 50px;
 }
 body {
   background-color: black;
@@ -18,7 +20,6 @@ video {
 #video {
   margin: auto;
   vertical-align: top;
-  margin: 0 auto;
   width: 50%;
   height: 500px;
   width: 500px;
@@ -30,30 +31,80 @@ video {
   top: 200px;
   font-family: arial;
 }
-a:link {
+a:link, a:visited {
   text-decoration: none;
-  color: #A6B0B0;
-}
-a:visited {
   color: #A6B0B0;
 }
 #audio {
   vertical-align: top;
   margin: 0 auto;
-  width: 50%;
+  position: absolute;
+  left: 900px;
+  top: 150px;
+  padding-right: 5px;
+}
+#songTitle {
+  color: #A6B0B0;
+  font-family: arial;
+}
+#playPauseButton {
+  display: inline-block;
+  position: absolute;
+  left: 950px;
+  top: 250px;
+}
+#rectangle {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    opacity: 0.2;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px white;
+}
+#arrow {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left:100px solid #A6B0B0;
+    position: relative;
+    left: 30px;
+    top: 15px;
+}
+#column1 {
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    background-color: #A6B0B0;
+    box-shadow: 1px 1px 5px #888888;
+}
+#column2 {
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    left: 90px;
+    top: 30px;
+    background-color: #A6B0B0;
+    box-shadow: 1px 1px 5px #888888;
 }
 #sc-logo {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   padding-left: 25px;
+  position: absolute;
+  left: 200px;
+  top: 150px;
 }
 #footer {
   color: #A6B0B0;
   font-size: 85%;
   font-family: Arial;
-  float: right;
   padding-top: 10px;
   padding-left: 25px;
+  display: inline;
 }
 #footer a, #footer a:visited {
   color: #A6B0B0;

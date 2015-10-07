@@ -17,12 +17,14 @@ $(document).ready(function() {
       url: url,
       success: function(data) {
         var songList = [];
+        var titleList = [];
         var song;
         for(var i = 0; i < data.track_count; i++) {
           song = data.tracks[i].stream_url + "?client_id=" + SC_clientID1 + SC_clientID2 + SC_clientID3;
           songList.push(song);
+          titleList.push(data.tracks[i].title);
         }
-        callback(songList);
+        callback(songList, titleList);
       },
       error: function() {
         console.log(arguments);
@@ -31,13 +33,16 @@ $(document).ready(function() {
   }
 
   var arrayOfSongs = [];
+  var arrayOfSongTitles = [];
   var song;
+  var title;
 
   // gets the playlist as an array of urls invokes playSong()
-  getPlayList(SC_URL, function(songList) {
+  getPlayList(SC_URL, function(songList, titleList) {
     console.log(songList);
     for(var i = 0; i < songList.length; i++) {
       arrayOfSongs.push(songList[i]);
+      arrayOfSongTitles.push(titleList[i]);
     }
     getSong();
   });
@@ -57,22 +62,37 @@ $(document).ready(function() {
   function getSong() {
     getSongNumber();
     song = arrayOfSongs[songNumber];
-    $('#song').attr("src", song).attr("preload", "auto");
+    title = arrayOfSongTitles[songNumber];
+    $('#songTitle').html(title);
+    $('#song').attr('controls', false).attr('src', song).attr('preload', 'auto');
   }
 
   // adds an eventhandler to play the song
-  $('#song').click('play', getSong);
+  $('#song').attr('controls', false).click('play', getSong);
 
   // plays the song
   function playSong() {
     getSongNumber();
     song = arrayOfSongs[songNumber];
-    $('#song').attr("src", song).attr("preload", "auto").get(0).play();
-    console.log('playing ' + song);
+    $('#song').attr('controls', false).attr('src', song).attr('preload', 'auto').get(0).play();
   }
 
   // adds a eventhandler for when the song is over
   $('#song').on('ended', playSong);
+  $('.pause').hide();
+  $('#playPauseButton').on('click', function() {
+      if($('#song').get(0).paused) {
+          $('#song').get(0).play();
+          $(this).removeClass('.pause');
+          $('.play').hide();
+          $('.pause').show();
+      } else {
+          $('#song').get(0).pause();
+          $(this).removeClass('.play');
+          $('.pause').hide();
+          $('.play').show();
+      }
+  });
 
   // url for an ajax call for the first set of Instagram videos
   var KEY1 = "1b04a24609";
@@ -112,7 +132,7 @@ $(document).ready(function() {
   function enqueueVideoAndInfo() {
     video = videos.shift();
     username = usernames.shift();
-    $('video').attr("src", video).attr("controls", true).prop("muted", true).get(0).play();
+    $('video').attr('src', video).attr('controls', false).prop('muted', true).get(0).play();
     $('#username').html('<a href="' + "https://instagram.com/" + username + '" target="_blank">Uploaded by: <br />@' + username + '<a/>');
   }
 
@@ -138,14 +158,21 @@ $(document).ready(function() {
 
   // ensures a new video to play after one ends
   $('video').on('ended', playVideo);
+
+  // gives video the ability to play and pause
+  $('video').on('click', function() {
+    $(this).each(function() {
+      $(this).get(0).paused ? $(this).get(0).play() : $(this).get(0).pause();
+    });
+  });
+
   playVideo();
 
   //TO DO
   //Refactor ajax call
   //Design a piece to invite to play music
-  //Design play/pause buttons
+  //Design play/pause buttons for video
   //Fix single double quatation situation
-  //Add a click handler for pausing the video
   //Create an object that holds all the user and video info
   //Display user instagram name in a better way
 });
