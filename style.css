@@ -98,17 +98,17 @@ a:link, a:visited {
 }
 #audio {
   position: absolute;
-  left: 530px;
-  top: 10px;
+  left: 565px;
+  top: 15px;
 }
-/*#nextSongButton {
+#nextSongButton {
   position: absolute;
-  left: 1100px;
-  top: 300px;
+  left: 511px;
+  top: 2px;
 }
 #nextSongRectangle {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
     background-color: #A6B0B0;
     opacity: 0.2;
     position: absolute;
@@ -118,22 +118,23 @@ a:link, a:visited {
 #nextSongArrow {
     width: 0;
     height: 0;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left:50px solid #A6B0B0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 16px solid #A6B0B0;
     position: relative;
-    left: 40px;
-    top: 22px;
-}
-#nextSongColumn {
-    width: 20px;
-    height: 60px;
-    position: absolute;
     left: 10px;
-    top: 20px;
-    background-color: #A6B0B0;
-    box-shadow: 1px 1px 5px #888888;
-}*/
+    top: 11px;
+}
+#nextSongArrow2 {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 16px solid #A6B0B0;
+    position: relative;
+    left: 20px;
+    top: -5px;
+}
 /*#footer {
   color: #A6B0B0;
   font-size: 85%;

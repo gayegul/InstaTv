@@ -5,8 +5,6 @@ $(document).ready(function() {
   var SC_clientID2 = "fff4e0b83f";
   var SC_clientID3 = "f2ab3829bc";
   var SC_URL = "http://api.soundcloud.com/playlists/151936626?client_id=" + SC_clientID1 + SC_clientID2 + SC_clientID3;
-  // 1 song list for testing DELETE after tests pass
-  // var SC_URL = "http://api.soundcloud.com/playlists/152086334?client_id=" + SC_clientID1 + SC_clientID2 + SC_clientID3;
 
   // makes an ajax call and provides an array of song urls
   function getPlayList(url, callback) {
@@ -80,7 +78,11 @@ $(document).ready(function() {
 
   // adds a eventhandler for when the song is over
   $('#song').on('ended', playSong);
+
+  // hides the pause button makin the play button show up on load
   $('.pause').hide();
+
+  // adds a eventhandler to the play/pause button
   $('#playPauseButton').on('click', function() {
       if($('#song').get(0).paused) {
           $('#song').get(0).play();
@@ -93,6 +95,12 @@ $(document).ready(function() {
           $('.pause').hide();
           $('.play').show();
       }
+  });
+
+  // adds a click eventhandler to play the next song
+  $('#nextSongButton').on('click', function() {
+    getSong();
+    playSong();
   });
 
   // url for an ajax call for the first set of Instagram videos
@@ -171,9 +179,5 @@ $(document).ready(function() {
 
   //TO DO
   //Refactor ajax call
-  //Design a piece to invite to play music
-  //Design play/pause buttons for video
-  //Fix single double quatation situation
   //Create an object that holds all the user and video info
-  //Display user instagram name in a better way
 });
