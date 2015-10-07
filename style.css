@@ -1,0 +1,187 @@
+header {
+  font-size: 40px;
+  margin-bottom: 20px;
+  background-color: white;
+  letter-spacing: 0.0625em;
+  display: inline;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+body {
+  background-color: black;
+  font-family: Arial;
+}
+#nameLogo, #name {
+  display: inline;
+  position: absolute;
+  left: 20px;
+}
+video {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+#video {
+  padding-top: 40px;
+  margin: auto;
+  vertical-align: top;
+  height: 500px;
+  width: 500px;
+  /*border-left: 1px ridge #A6B0B0;
+  border-right: 1px ridge #A6B0B0;*/
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: #A6B0B0;
+}
+#controls {
+  text-align: center;
+}
+#sc-logo {
+  height: 32px;
+  position: absolute;
+  top: 5px;
+  left: 400px;
+}
+#playPauseButton {
+  position: absolute;
+  left: 470px;
+  top: 2px;
+}
+#rectangle {
+    width: 40px;
+    height: 40px;
+    background-color: #A6B0B0;
+    opacity: 0.2;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px white;
+}
+#arrow {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 16px solid #A6B0B0;
+    position: relative;
+    left: 15px;
+    top: 11px;
+}
+#column1 {
+    width: 7px;
+    height: 16px;
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    background-color: #A6B0B0;
+    box-shadow: 1px 1px 5px #888888;
+}
+#column2 {
+    width: 7px;
+    height: 16px;
+    position: absolute;
+    left: 22px;
+    top: 11px;
+    background-color: #A6B0B0;
+    box-shadow: 1px 1px 5px #888888;
+}
+#musicLogo {
+  width: 30px;
+  position: absolute;
+  left: 435px;
+  top: 6px;
+}
+#songTitle {
+  color: #A6B0B0;
+  font-family: arial;
+}
+#audio {
+  position: absolute;
+  left: 565px;
+  top: 15px;
+}
+#nextSongButton {
+  position: absolute;
+  left: 511px;
+  top: 2px;
+}
+#nextSongRectangle {
+    width: 40px;
+    height: 40px;
+    background-color: #A6B0B0;
+    opacity: 0.2;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px white;
+}
+#nextSongArrow {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 16px solid #A6B0B0;
+    position: relative;
+    left: 10px;
+    top: 11px;
+}
+#nextSongArrow2 {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 16px solid #A6B0B0;
+    position: relative;
+    left: 20px;
+    top: -5px;
+}
+/*#footer {
+  color: #A6B0B0;
+  font-size: 85%;
+  position: fixed;
+  font-family: Arial;
+  padding-top: 10px;
+  padding-left: 25px;
+  display: inline;
+}
+#footer a, #footer a:visited {
+  color: #A6B0B0;
+}*/
+#userInfo {
+  text-align: center;
+}
+.socialMediaIcons {
+  display: inline;
+  padding: 0;
+}
+.icon-octoface,
+.icon-linkedin,
+.icon-social-twitter,
+.icon-instagram,
+.icon-mail,
+.icon-call-phone {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #DDDDDD;
+}
+.smIcon {
+  display: inline-block;
+}
+#username {
+  color: #A6B0B0;
+  display: inline;
+  text-align: center;
+  font-family: arial;
+}
+#footer {
+  color: #A6B0B0;
+  font-size: 85%;
+  text-align: center;
+	bottom: 0;
+	left: 0;
+  right: 0;
+}
+#footer a, #footer a:visited {
+  color: #A6B0B0;
+}
