@@ -14,7 +14,7 @@ Taylor Crane
 Twitter: taykcrane
 GitHub: https://github.com/taykcrane/hyperlax
 
-You can watch videos that are recently uploaded to Instagram using #hyperlapse while listening to a playlist full of deep house chill music.
+You can watch videos that are recently uploaded to Instagram using #hyperlapse while listening to a SoundCloud playlist.
 
 App is written in jQuery and utilizing Instagram and SoundCloud APIs.
 
