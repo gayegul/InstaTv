@@ -178,6 +178,7 @@ $(document).ready(function() {
   playVideo();
 
   //TO DO
-  //Refactor ajax call
+  //Refactor
+  //Rewrite ajax calls - into one
   //Create an object that holds all the user and video info
 });
