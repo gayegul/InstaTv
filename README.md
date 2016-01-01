@@ -1,9 +1,9 @@
 # InstaTv
 
-An Instagram video and SoundCloud music app inspired by
+An Instagram video and SoundCloud music app that can be reached here:
 http://gayegul.github.io/jQueryInstaTv/
 
-
+Inspired by
 #### Hypermasher.com
 by
 Andrew T. Baker
