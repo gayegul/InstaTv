@@ -1,6 +1,8 @@
 # InstaTv
 
 An Instagram video and SoundCloud music app inspired by
+http://gayegul.github.io/jQueryInstaTv/
+
 
 #### Hypermasher.com
 by
