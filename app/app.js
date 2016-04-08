@@ -17,7 +17,7 @@ $(document).ready(function() {
         var songList = [];
         var titleList = [];
         var song;
-        for(var i = 0; i < data.track_count; i++) {
+        for(var i = 0; i < data.tracks.length; i++) {
           song = data.tracks[i].stream_url + "?client_id=" + SC_clientID1 + SC_clientID2 + SC_clientID3;
           songList.push(song);
           titleList.push(data.tracks[i].title);
