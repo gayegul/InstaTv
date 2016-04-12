@@ -28,8 +28,6 @@ video {
   vertical-align: top;
   height: 500px;
   width: 500px;
-  /*border-left: 1px ridge #A6B0B0;
-  border-right: 1px ridge #A6B0B0;*/
 }
 a:link, a:visited {
   text-decoration: none;
@@ -135,18 +133,6 @@ a:link, a:visited {
     left: 20px;
     top: -5px;
 }
-/*#footer {
-  color: #A6B0B0;
-  font-size: 85%;
-  position: fixed;
-  font-family: Arial;
-  padding-top: 10px;
-  padding-left: 25px;
-  display: inline;
-}
-#footer a, #footer a:visited {
-  color: #A6B0B0;
-}*/
 #userInfo {
   text-align: center;
 }

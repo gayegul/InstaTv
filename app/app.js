@@ -168,8 +168,10 @@ $(document).ready(function() {
 
   playVideo();
 
-  //TO DO
-  //Refactor
-  //Rewrite ajax calls - merge into one
-  //Create an object that holds all the user and video info
+  // TODO
+  // refactor
+  // rewrite ajax calls - merge into one
+  // create an object that holds all the user and video info
+  // check if the songs are streamable before putting them in list
+  // put song and title list into one array as an object
 });
